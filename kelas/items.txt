@@ -1,0 +1,5 @@
+bread milk egg
+egg milk bread
+egg bread
+egg tofu
+bread
