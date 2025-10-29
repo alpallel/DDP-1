@@ -1,8 +1,6 @@
-def ispalindrome(inp, n=-1):
-    if n == -1 * (len(inp)):
-        return inp[0]
-    hasil = (inp[n] + ispalindrome(inp,n-1))
-    if hasil == len(inp):
-        return str(hasil) == inp
+def ispalindrome(inp):
+    def palindrome(inp, n =- 1):
+        return inp[n]
+    return ispalindrome()
     
 print(ispalindrome("bambang"))

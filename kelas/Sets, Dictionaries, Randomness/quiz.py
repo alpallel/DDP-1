@@ -5,10 +5,9 @@ input_dict = {"a": [1,2,3],
 hasil = {}
 for key in input_dict:
     for val in input_dict[key]:
-        hasil.update({val: [key]})
-        if key in hasil[val]:
-            continue
-        else:
+        if val not in hasil:
+            hasil.update({val: [key]})
+        if key not in hasil[val]:
             hasil[val].append(key)
 
 print(hasil)
