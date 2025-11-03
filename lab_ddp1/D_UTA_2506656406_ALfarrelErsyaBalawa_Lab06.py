@@ -17,7 +17,6 @@ def read_matrix(rows, cols):
         hasil.append(temp)
     return hasil
 
-
 def print_matrix(matrix):
     for baris in matrix:
         for col in baris:
