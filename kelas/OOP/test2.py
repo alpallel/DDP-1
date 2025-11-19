@@ -1,7 +1,11 @@
-from worksheet import Snack
+class A:
+    
+    def __str__(self):
+        return "yo"
+    
+    # def __repr__(self):
+    #     return "ala"
 
-citato = Snack('citato', 'indomi', 10000, 500, 5)
+    def __mul__(self, other):
+        return 
 
-print(citato)
-citato.increment_stock(5)
-print(citato)

@@ -1,20 +1,27 @@
-class Counter(object):
-    def __init__(self, value=0):
-        self.value = value
 
-    def __str__(self):
-        return f"value = {self.value}"
 
-    def count(self):
-        self.value += 1
-    
-    def reset(self):
-        self.value = 0
+class Food:
+    def __init__(self, name, type):
+        self.name = name
+        self.type = type
 
-my_counter = Counter()
-print(my_counter,1)
-my_counter.count()
-print(my_counter)
-my_counter.reset()
-print(my_counter)
+class Herbivore:
+    def eat(self, food):
+        if food.type == "plant":
+            print(f"{food.name} is plant-based, I will eat.")
+        else:
+            super().eat(food)
+class Carnivore:
+    def eat(self, food):
+        if food.type == "animal":
+            print(f"{food.name} is animal-based, I will eat.")
+        else:
+            print(f"No u.")
+class Rat(Herbivore, Carnivore):
+    pass
 
+rat = Rat()
+
+grass = Food("grass", "plant")
+rat.eat(grass)
+rat.eat(Food("ant", "animal"))
