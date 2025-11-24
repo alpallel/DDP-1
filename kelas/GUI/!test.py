@@ -1,7 +1,5 @@
 import tkinter as tk
 import random
-
-
 class GUI:
     def __init__(self, master):
         self.master = master
@@ -13,14 +11,13 @@ class GUI:
         self.button1.pack()
 
     def surprise(self):
-        bgo = "C:\\Users\\alpal\\OneDrive\\Documents\\ngoding\\ddp1\\monke.gif"
+        bg = tk.PhotoImage(file="C:\\Users\\alpal\\OneDrive\\Documents\\ngoding\\ddp1\\monke.gif")
         for i in range(150):
             # window = tk.Toplevel(self.master, background=f"#{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)}{random.randint(0,9)}")
             window = tk.Toplevel(self.master)
-            window.geometry(f"{random.randint(100,700)}x{random.randint(100,700)}+{random.randint(-100,1100)}+{random.randint(-75,500)}")
+            window.geometry(f"{random.randint(00,700)}x{random.randint(00,700)}+{random.randint(-150,1160)}+{random.randint(-125,650)}")
             window.title("hai :)")
-            # tk.Label(window, text=("hai :) "*100 + "\n")*100).pack()
-            tk.Label(window, image=bgo).pack()
+            tk.Label(window, text=("hai :) "*100 + "\n")*100).pack()
             window.lower(self.master)
 
 root = tk.Tk()

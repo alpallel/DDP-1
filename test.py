@@ -1,8 +1,4 @@
-tes = {1:"satu", 2:"dua", 3:"tiga"}
-print(tes)
+tes = ["a","b","c"]
 
-del tes[1]
-print(tes)
-
-tes[4] = "empat"
-print(tes)
+for a in enumerate(tes):
+    print(a)
